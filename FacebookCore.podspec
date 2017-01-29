@@ -26,5 +26,5 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'ENABLE_TESTABILITY' => 'YES' }
 
   s.ios.dependency 'Bolts', '~> 1.8'
-  s.ios.dependency 'FBSDKCoreKit', :git => 'https://github.com/Holdapp/facebook-ios-sdk.git'
+  s.ios.dependency 'FBSDKCoreKit', :git => 'https://github.com/Holdapp/facebook-ios-sdk.git', :commit => '7421d87cc9fa69d5d98befd19224f97afb51449c1'
 end
