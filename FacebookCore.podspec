@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                    * Working with Access Tokens and User Profiles
                    DESC
 
-  s.source       = { :git => 'https://github.com/facebook/facebook-sdk-swift.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/Holdapp/facebook-sdk-swift.git', :tag => s.version.to_s }
 
   s.requires_arc = true
   s.platform     = :ios
@@ -24,4 +24,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/Core/**/*.swift'
   s.module_name = 'FacebookCore'
   s.pod_target_xcconfig = { 'ENABLE_TESTABILITY' => 'YES' }
+
+  s.ios.dependency 'FBSDKCoreKit', :git => 'https://github.com/Holdapp/facebook-ios-sdk.git'
+  s.ios.dependency 'Bolts', '~> 1.8'
 end
