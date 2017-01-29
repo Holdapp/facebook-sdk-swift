@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                    * Publish content and open graph stories with the Graph API.
                    DESC
 
-  s.source       = { :git => 'https://github.com/Holdapp/facebook-sdk-swift.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/facebook/facebook-sdk-swift.git', :tag => s.version.to_s }
 
   s.requires_arc = true
   s.platform     = :ios
@@ -26,6 +26,5 @@ Pod::Spec.new do |s|
 
   s.ios.dependency 'FacebookCore'
   s.ios.dependency 'Bolts', '~> 1.8'
-  s.ios.dependency 'FBSDKCoreKit', :git => 'https://github.com/Holdapp/facebook-ios-sdk.git'
   s.ios.dependency 'FBSDKShareKit', '~> 4.14'
 end
